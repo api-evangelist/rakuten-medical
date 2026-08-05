@@ -1,0 +1,70 @@
+generated: '2026-08-05'
+method: probed
+source: live probes of the rakuten-med.com web hosts
+host: https://rakuten-med.com
+summary:
+  documents_found: 0
+  note: >-
+    Every /.well-known/ and contract-discovery path probed returned 404 from the WordPress-hosted
+    corporate site (both the /us/ and /jp/ locales). No API host exists — api., developer.,
+    developers., docs., docs., mcp., status. and security.rakuten-med.com do not resolve in DNS.
+    The one non-www host that does resolve, portal.rakuten-med.com, is an F5 BIG-IP APM employee
+    remote-access portal that answers HTTP 200 with the same HTML logout page for EVERY path,
+    including /.well-known/agent-card.json, /.well-known/agent.json, /openapi.json and /llms.txt —
+    the SPA/appliance catch-all false positive. Those 200s were inspected and rejected: the bodies
+    are `<html><head><title>BIG-IP logout page</title>`, not JSON. Recorded as evidence of absence;
+    no WellKnown, AgentCard, or OpenAPI pointer is wired for this file.
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/oauth-protected-resource
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
+- path: /.well-known/mcp.json
+  status: 404
+- path: /.well-known/agent-card.json
+  status: 404
+- path: /.well-known/agent.json
+  status: 404
+- path: /llms.txt
+  status: 404
+- path: /openapi.json
+  status: 404
+- path: /openapi.yaml
+  status: 404
+- path: /swagger.json
+  status: 404
+- path: /api-docs
+  status: 404
+- path: /docs
+  status: 404
+- path: /developers
+  status: 404
+- path: /developer
+  status: 404
+- path: /api
+  status: 404
+- path: /robots.txt
+  status: 404
+- path: /sitemap.xml
+  status: 200
+  note: redirects to /us/sitemap_index.xml (Yoast SEO); pages only, no API or spec entries
+rejected:
+- host: portal.rakuten-med.com
+  paths:
+  - /.well-known/agent-card.json
+  - /.well-known/agent.json
+  - /openapi.json
+  - /llms.txt
+  status: 200
+  content_type: text/html; charset=utf-8
+  reason: >-
+    F5 BIG-IP APM catch-all; every path returns the same HTML logout page (my.logout.php3), not a
+    JSON agent card or spec. Not an agent surface.

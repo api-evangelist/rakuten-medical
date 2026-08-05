@@ -1,7 +1,18 @@
 aid: rakuten-medical
 name: Rakuten Medical
-description: 'Rakuten Medical is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+image: https://rakuten-med.com/us/wp-content/uploads/sites/6/2021/02/RakutenMedical_KV.png
+description: 'Rakuten Medical, Inc. is a global biotechnology company headquartered in San Diego, California,
+  developing precision, cell-targeting investigational cancer therapies on its proprietary Alluminox
+  platform — a drug-device combination pairing an IRDye 700DX light-activated dye conjugated to a
+  cell-targeting antibody with local illumination by 690nm red light. Founded in 2010 as Aspyrian
+  Therapeutics and renamed following investment from Rakuten Group, the company operates in the United
+  States, Japan, Taiwan, Switzerland and India. Its lead asset ASP-1929, an EGFR-targeting antibody-dye
+  conjugate, received marketing approval in Japan in 2021 as Akalux for unresectable locally advanced
+  or recurrent head and neck cancer and is in global Phase 3 development alone and in combination with
+  anti-PD-1 therapy; RM-1995 and RM-0256 follow in earlier-stage programs. As a clinical-stage
+  therapeutics and drug-device company, Rakuten Medical publishes no public developer API, SDK, webhook,
+  or machine-readable specification; this profile captures its corporate identity and public web
+  properties in the API Evangelist network.'
 url: https://raw.githubusercontent.com/api-evangelist/rakuten-medical/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
@@ -12,6 +23,15 @@ created: '2026-08-05'
 modified: '2026-08-05'
 tags:
 - Company
+- Biotechnology
+- Pharmaceuticals
+- Oncology
+- Healthcare
+- Life Sciences
+- Photoimmunotherapy
+- Medical Devices
+- Clinical Trials
+- Cancer
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +39,57 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/rakuten-medical-domain-security.yml
+- type: LLMsTxt
+  url: llms/rakuten-medical-llms.txt
 - type: Website
+  url: https://rakuten-med.com/us/
+- type: About
+  url: https://rakuten-med.com/us/about/
+- type: Blog
+  url: https://rakuten-med.com/us/news/
+- type: BlogRSS
+  url: https://rakuten-med.com/us/feed/
+- type: News
+  url: https://rakuten-med.com/us/news/press-releases/
+- type: Support
+  url: https://rakuten-med.com/us/contact/
+- type: Careers
+  url: https://rakuten-med.com/us/recruitment/
+- type: PrivacyPolicy
+  url: https://rakuten-med.com/us/privacy-policy/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/rakuten-medical/
+- type: Profile
   url: https://forgeglobal.com/rakuten-medical_stock/
+x-enrichment:
+  date: '2026-08-05'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: >-
+    Rakuten Medical is a clinical-stage biotechnology company whose product is a drug-device cancer
+    therapy (an IRDye 700DX antibody conjugate plus a 690nm laser), sold to hospitals and regulated
+    by PMDA and FDA rather than integrated by developers; its only web property is a WordPress
+    corporate site, and the sole non-www host that resolves, portal.rakuten-med.com, is an F5 BIG-IP
+    employee VPN that answers 200 with the same HTML logout page for every path.
+  evidence:
+  - url: https://rakuten-med.com/us/openapi.json
+    status: 404
+  - url: https://rakuten-med.com/us/.well-known/api-catalog
+    status: 404
+  - url: https://rakuten-med.com/us/.well-known/agent-card.json
+    status: 404
+  - url: https://rakuten-med.com/us/llms.txt
+    status: 404
+  - url: https://rakuten-med.com/us/developers
+    status: 404
+  - url: https://portal.rakuten-med.com/.well-known/agent-card.json
+    status: 200
+  - url: https://rakuten-med.com/us/pipeline/
+    status: 200
+  checked: '2026-08-05'
