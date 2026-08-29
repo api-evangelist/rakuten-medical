@@ -1,5 +1,16 @@
 aid: rakuten-medical
 name: Rakuten Medical
+deliveryModel:
+  model: unknown
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-28'
+  method: derived
 image: https://rakuten-med.com/us/wp-content/uploads/sites/6/2021/02/RakutenMedical_KV.png
 description: 'Rakuten Medical, Inc. is a global biotechnology company headquartered in San Diego, California,
   developing precision, cell-targeting investigational cancer therapies on its proprietary Alluminox
