@@ -2,11 +2,11 @@
   "repo": "rakuten-medical",
   "feeds": [
     {
-      "source": "https://rakuten-med.com/us/feed/",
-      "feed_url": "https://rakuten-med.com/us/feed/",
+      "source": "https://rakuten-med.com/us/news/",
+      "feed_url": "https://rakuten-med.com/us/news/feed/",
       "title": "",
       "saved": 0,
-      "method": "feed"
+      "method": "discovered"
     },
     {
       "source": "https://rakuten-med.com/us/about/",
@@ -16,13 +16,13 @@
       "method": "discovered"
     },
     {
-      "source": "https://rakuten-med.com/us/news/",
+      "source": "https://rakuten-med.com/us/feed/",
       "feed_url": "https://rakuten-med.com/us/feed/",
       "title": "",
       "saved": 0,
-      "method": "discovered"
+      "method": "feed"
     }
   ],
   "post_count": 0,
-  "fetched": "2026-08-30T22:33:40Z"
+  "fetched": "2026-09-06T19:17:18Z"
 }
