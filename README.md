@@ -64,5 +64,90 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Rakuten Medical is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://forgeglobal.com/rakuten-medical_stock/
+Rakuten Medical, Inc. is a global biotechnology company headquartered in San Diego, California, developing precision, cell-targeting investigational cancer therapies on its proprietary Alluminox platform — a drug-device combination pairing an IRDye 700DX light-activated dye conjugated to a cell-targeting antibody with local illumination by 690nm red light. Founded in 2010 as Aspyrian Therapeutics and renamed following investment from Rakuten Group, the company operates in the United States, Japan, Taiwan, Switzerland and India. Its lead asset ASP-1929, an EGFR-targeting antibody-dye conjugate, received marketing approval in Japan in 2021 as Akalux for unresectable locally advanced or recurrent head and neck cancer and is in global Phase 3 development alone and in combination with anti-PD-1 therapy; RM-1995 and RM-0256 follow in earlier-stage programs. As a clinical-stage therapeutics and drug-device company, Rakuten Medical publishes no public developer API, SDK, webhook, or machine-readable specification; this profile captures its corporate identity and public web properties in the API Evangelist network.
+
+**Areas:** Company · Biotechnology · Pharmaceuticals · Oncology · Healthcare · Life Sciences · Photoimmunotherapy · Medical Devices · Clinical Trials · Cancer
+
+## Rakuten Medical on APIs.io
+
+Everything profiled for Rakuten Medical is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/rakuten-medical/](https://apis.io/providers/rakuten-medical/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [Moved to /providers/rakuten-medical/](https://apis.io/servers/rakuten-medical/rakuten-medical/)
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Rakuten Medical Domain Security](https://apis.io/security/rakuten-medical/rakuten-medical-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://rakuten-med.com/us/)
+- [Support](https://rakuten-med.com/us/contact/)
+- [Blog](https://rakuten-med.com/us/news/)
+- [Privacy policy](https://rakuten-med.com/us/privacy-policy/)
+
+## API Evangelist rating
+
+**Kin Score 8.1** — minimal · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 52.5 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 7.1 |
+| Access clarity | 10.5 |
+
+**Agent readiness 2.2** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | platform (partial credit) |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | na |
+
+**Regulatory alignment 7.8** — Health
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/rakuten-medical/](https://apis.io/providers/rakuten-medical/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Rakuten Medical: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/rakuten-medical/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
